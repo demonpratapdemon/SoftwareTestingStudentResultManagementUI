@@ -180,7 +180,7 @@
           Lowercase, one Digit and one special symbol(!,@,#,$,%,^,&,*)</span
         >
       </div>
-      <div class="form-group" *ngIf="registerform.get('password').valid">
+      <div class="form-group">
         <label for="confirm">Confirm Password</label>
         <input
           type="password"
@@ -201,6 +201,7 @@
         class="btn btn-primary"
         type="submit"
         [disabled]="!registerform.valid"
+        id="register"
       >
         Register
       </button>
